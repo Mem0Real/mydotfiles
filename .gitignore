@@ -9,6 +9,7 @@
 !/fish/
 !/hypr/
 !/nvim/
+!/nvim_custom/
 !/rofi/
 !/waybar/
 
@@ -16,5 +17,6 @@
 !/fish/**/*
 !/hypr/**/*
 !/nvim/**/*
+!/nvim_custom/**/*
 !/rofi/**/*
 !/waybar/**/*
