@@ -1,13 +1,13 @@
 # Ignore everything
-*
+/*
 
-# Don not ignore the .gitignore file itself
+# Don't ignore the .gitignore file itself
 !.gitignore
 
 # Re-include the specific directories
-!/alacritty
-!/fish
-!/hypr
-!/nvim
-!/rofi
-!/waybar
+!/alacritty/*
+!/fish/*
+!/hypr/*
+!/nvim/*
+!/rofi/*
+!/waybar/*
