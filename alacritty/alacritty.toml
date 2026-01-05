@@ -3,3 +3,7 @@ import = [
     #"~/.config/alacritty/themes/themes/nvim_dark.toml"
     "~/.config/alacritty/themes/my_nordic.toml"
 ]
+
+[font]
+#normal = { family = "FiraCode Nerd Font", style = "Regular" }
+normal = { family = "JetBrainsMono NF SemiBold", style = "Regular" }
