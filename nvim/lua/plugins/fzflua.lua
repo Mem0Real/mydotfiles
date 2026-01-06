@@ -9,60 +9,74 @@ return {
 	keys = {
 		{
 			"<leader>f",
-			desc="[F]ind",
+			desc = "[F]ind",
 		},
-		{ 
+		{
 			"<leader>ff",
-			function() require('fzf-lua').files() end, 
-			desc="[F]ile",
+			function()
+				require("fzf-lua").files()
+			end,
+			desc = "[F]ile",
 		},
 		{
 			"<leader>fw",
-			function() require('fzf-lua').lgrep_curbuf() end,
-			desc="Find word in current file",
+			function()
+				require("fzf-lua").lgrep_curbuf()
+			end,
+			desc = "Find word in current file",
 		},
 		{
 			"<leader>fW",
-			function() require('fzf-lua').live_grep() end,
-			desc="Find word in all files",
+			function()
+				require("fzf-lua").live_grep()
+			end,
+			desc = "Find word in all files",
 		},
 		{
 			"<leader>b",
-			function() require('fzf-lua').buffers() end,
-			desc="[B]uffers",
+			function()
+				require("fzf-lua").buffers()
+			end,
+			desc = "[B]uffers",
 		},
 		{
 			"<leader>ft",
-			function() require('fzf-lua').tabs() end,
-			desc="[T]abs",
+			function()
+				require("fzf-lua").tabs()
+			end,
+			desc = "[T]abs",
 		},
 		{
 			"<leader>fc",
-			desc="[C]onfig",
+			desc = "[C]onfig",
 		},
 		{
 			"<leader>fcn",
-			function() require('fzf-lua').files({cwd=vim.fn.stdpath("config")}) end,
-			desc="[N]eovim ",
+			function()
+				require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
+			end,
+			desc = "[N]eovim ",
 		},
 		{
 			"<leader>fch",
-			function() require('fzf-lua').files({cwd="~/.config/hypr"}) end,
-			desc="[Hypr]",
+			function()
+				require("fzf-lua").files({ cwd = "~/.config/hypr" })
+			end,
+			desc = "[Hypr]",
 		},
 		{
 			"<leader>fz",
-			function() require('fzf-lua').builtin() end,
-			desc="[F]uzzy [C]ommands",
+			function()
+				require("fzf-lua").builtin()
+			end,
+			desc = "[F]uzzy [C]ommands",
 		},
 		{
 			"<leader>o",
-			desc="[O]pen",
+			function()
+				require("fzf-lua").oldfiles()
+			end,
+			desc = "[O]pen recent",
 		},
-		{
-			"<leader>or",
-			function() require('fzf-lua').oldfiles() end,
-			desc="[R]ecent",
-		},
-	}
+	},
 }
