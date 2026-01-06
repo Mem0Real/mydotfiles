@@ -23,4 +23,3 @@ end
 
 set --universal pure_show_system_time false
 set --universal pure_symbol_prompt "➤"
-

@@ -1,7 +1,7 @@
 -- Manual Edits
-vim.o.shiftwidth = 4 -- Amount to indent with << and >
-vim.o.tabstop = 4 -- How many spaces shown per tab
-vim.o.softtabstop = 4 -- How many spaces applied when tab is pressed
+vim.o.shiftwidth = 2 -- Amount to indent with << and >
+vim.o.tabstop = 2 -- How many spaces shown per tab
+vim.o.softtabstop = 2 -- How many spaces applied when tab is pressed
 
 vim.o.smarttab = true
 vim.o.smartindent = true
@@ -33,7 +33,8 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default ==> CHANGED
-vim.o.signcolumn = 'yes'
+--vim.o.signcolumn = 'yes'
+vim.o.signcolumn = 'no'
 
 -- Configure how new splits should be opened
 vim.o.splitright = true
@@ -48,8 +49,22 @@ vim.o.splitbelow = true
 --   See `:help lua-options`
 --   and `:help lua-options-guide`
 vim.o.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- vim.opt.listchars = { tab = '|  ', trail = '·', nbsp = '␣' }
+--
+-- vim.opt.listchars = {
+-- 	-- For files using actual TABS:
+-- 	-- The space after the bar is important to preserve visual alignment
+-- 	tab = '│ ', 
+--
+-- 	-- For files using SPACES (VS Code style indent guides):
+-- 	-- This repeats the pattern for every 'shiftwidth' of leading spaces
+-- 	leadmultispace = '│   ', 
+--
+-- 	-- Optional: show trailing spaces and non-breaking spaces
+-- 	trail = '·',
+-- 	nbsp = '␣',
+-- }
 
 -- Show which line your cursor is on
 vim.o.cursorline = true
