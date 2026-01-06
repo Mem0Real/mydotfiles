@@ -1,18 +1,23 @@
 return {
-  'stevearc/oil.nvim',
-  ---@module 'oil'
-  ---@type oil.SetupOpts
+  "stevearc/oil.nvim",
   opts = {
-	-- Skip the confirmation popup for simple operations 	
-	skip_confirm_for_simple_edits = false,
-	float = {
-		padding = 4,
-		border = 8,
-	},
+    skip_confirm_for_simple_edits = true,
+
+    float = {
+      padding = 12,
+      border = "rounded",
+      win_options = {
+        winblend = 0, -- transparency (0 = solid, 20–30 = translucent)
+      },
+    },
+
+    preview_win = {
+      disable_preview = function(_)
+        return false
+      end,
+    },
   },
-  -- Optional dependencies
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
-  -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
-  -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
   lazy = false,
 }
+

@@ -52,6 +52,7 @@ vim.o.splitbelow = true
 --   and `:help lua-options-guide`
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+-- vim.opt.listchars = { tab = '|  ', trail = '·', nbsp = '␣' }
 
 -- Show which line your cursor is on
 vim.o.cursorline = true
