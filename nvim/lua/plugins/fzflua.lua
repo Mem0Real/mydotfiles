@@ -9,74 +9,74 @@ return {
 	keys = {
 		{
 			"<leader>f",
-			desc = "[F]ind",
+			desc = "find",
 		},
 		{
 			"<leader>ff",
 			function()
 				require("fzf-lua").files()
 			end,
-			desc = "[F]ile",
+			desc = "file",
 		},
 		{
 			"<leader>fw",
 			function()
 				require("fzf-lua").lgrep_curbuf()
 			end,
-			desc = "Find word in current file",
+			desc = "find word in current file",
 		},
 		{
 			"<leader>fW",
 			function()
 				require("fzf-lua").live_grep()
 			end,
-			desc = "Find word in all files",
+			desc = "find word in all files",
 		},
 		{
 			"<leader>b",
 			function()
 				require("fzf-lua").buffers()
 			end,
-			desc = "[B]uffers",
+			desc = "buffers",
 		},
 		{
 			"<leader>ft",
 			function()
 				require("fzf-lua").tabs()
 			end,
-			desc = "[T]abs",
+			desc = "tabs",
 		},
 		{
 			"<leader>fc",
-			desc = "[C]onfig",
+			desc = "config",
 		},
 		{
 			"<leader>fcn",
 			function()
 				require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
 			end,
-			desc = "[N]eovim ",
+			desc = "neovim ",
 		},
 		{
 			"<leader>fch",
 			function()
 				require("fzf-lua").files({ cwd = "~/.config/hypr" })
 			end,
-			desc = "[Hypr]",
+			desc = "hypr",
 		},
 		{
 			"<leader>fz",
 			function()
 				require("fzf-lua").builtin()
 			end,
-			desc = "[F]uzzy [C]ommands",
+			desc = "fuzzy commands",
 		},
 		{
-			"<leader>o",
+			"<leader>r",
 			function()
 				require("fzf-lua").oldfiles()
 			end,
-			desc = "[O]pen recent",
+			desc = "open recent",
 		},
 	},
 }
