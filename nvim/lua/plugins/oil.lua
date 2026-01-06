@@ -16,6 +16,15 @@ return {
         return false
       end,
     },
+
+	view_options = {
+		show_hidden = true,
+
+		is_hidden_file = function(name, buffer)
+			local m = name:match("^%.")
+			return m ~= nil
+		end,
+	},
   },
   dependencies = { { "nvim-mini/mini.icons", opts = {} } },
   lazy = false,

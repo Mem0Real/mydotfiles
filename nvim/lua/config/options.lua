@@ -12,9 +12,6 @@ vim.o.cmdheight = 0 -- Disable commandline until its needed
 -- Enable break indent
 vim.o.breakindent = true
 
--- Enable break indent
-vim.o.breakindent = true
-
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
@@ -36,7 +33,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default ==> CHANGED
-vim.o.signcolumn = 'no'
+vim.o.signcolumn = 'yes'
 
 -- Configure how new splits should be opened
 vim.o.splitright = true

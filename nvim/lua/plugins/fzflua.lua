@@ -1,6 +1,6 @@
 return {
 	"ibhagwan/fzf-lua",
-	--dependencies = { "nvim-mini/mini.icons" },
+	-- dependencies = { "nvim-mini/mini.icons" },
 	---@module "fzf-lua"
 	---@type fzf-lua.Config|{}
 	---@diagnostic disable: missing-fields
@@ -41,7 +41,7 @@ return {
 			desc="[C]onfig",
 		},
 		{
-			"<leader>fcn", 
+			"<leader>fcn",
 			function() require('fzf-lua').files({cwd=vim.fn.stdpath("config")}) end,
 			desc="[N]eovim ",
 		},
