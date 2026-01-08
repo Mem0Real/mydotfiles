@@ -40,7 +40,7 @@ vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { silent = true, desc = "Move b
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { silent = true, desc = "Move block up" })
 
 -- Close file
-vim.keymap.set({ "n", "i", "v" }, "<leader>q", "<cmd>bd<CR>", { silent = true, desc = "Close current file" })
+vim.keymap.set({ "n", "i", "v" }, "qq", "<cmd>bd<CR>", { silent = true, desc = "Close current file" })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -60,3 +60,6 @@ vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left wind
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+-- Terminal keymap
+-- require("config.term_keymap")

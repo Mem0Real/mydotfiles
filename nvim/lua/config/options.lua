@@ -33,8 +33,8 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default ==> CHANGED
---vim.o.signcolumn = 'yes'
-vim.o.signcolumn = "no"
+vim.o.signcolumn = "yes"
+--vim.o.signcolumn = "no"
 
 -- Configure how new splits should be opened
 vim.o.splitright = true
